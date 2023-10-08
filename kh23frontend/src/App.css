@@ -1,0 +1,277 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background-color: black;
+  color: white;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.SearchPanel {
+  background-color: #101010;
+  height: 65px;
+}
+
+.logo {
+  color: white;
+  font-family: 'Istok Web';
+  font-weight: 200;
+  font-size: 22px;
+  letter-spacing: -6%;
+  font-style: italic;
+
+  position: relative;
+  top: 50%;
+  left: 25px;
+
+  transform: translate(0, -50%);
+}
+
+input {
+  position: absolute;
+}
+
+.searchBar {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  transform: translate(-50%, 0);
+
+  width: 500px;
+  height: 36px;
+
+  border-radius: 100px;
+  border: solid 1px white;
+  
+  background-color: black;
+  color: white;
+  font-size: 12;
+  letter-spacing: -6%;
+
+  padding-left: 15px;
+}
+
+.searchBar:focus ~ .searchBarText {
+  color: transparent;
+}
+
+.searchBar[value=""]:not() + .searchBarText {
+  color: transparent;
+}
+
+.searchBar:active {
+  outline: none;
+}
+
+* {
+  outline: none;
+}
+
+.searchBarContainer {
+  color: rgb(201, 201, 201);
+  font-family: 'Istok Web';
+  font-size: 12px;
+  transition: 0.5s;
+}
+
+.searchBarContainer:hover {
+  color: transparent;
+  transition: 0.5s;
+}
+
+.searchBarText {
+  position: relative;
+  left: 491px;
+
+  pointer-events: none;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.loopa {
+  background-color: black;
+
+  border: solid 1px white;
+
+  width: 50px;
+  height: 38px;
+
+  position: absolute;
+  top: 10px;
+  right: 476px;
+
+  border-radius: 0 25px 25px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.egTitle {
+  font-size: 32px;
+  font-family: 'Inter';
+  font-weight: 900;
+  letter-spacing: -6%;
+
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 35px;
+
+  text-align: center;
+}
+
+.cardContainer {
+  display: flex;
+  margin-top: 35px;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 35px;
+}
+
+.card1 {
+  height: 400px;
+  width: 300px;
+  background-color: #161616;
+
+  border-radius: 25px;
+  position: relative;
+}
+
+.card {
+  height: 300px;
+  width: 225px;
+  background-color: #161616;
+
+  border-radius: 25px;
+  position: relative;
+}
+
+img {
+  height: 130px;
+}
+
+.card img {
+  height: 100px;
+}
+
+.pictureContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+
+  width: 100%;
+  height: 120px;
+  border-radius: 25px 25px 0 0;
+}
+
+.pictureContainer1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+
+  width: 100%;
+  height: 150px;
+  border-radius: 25px 25px 0 0;
+}
+
+.cardTitle {
+  margin-top: 10px;
+  margin-left: 15px;
+
+  font-family: 'Istok Web';
+  font-size: 14px;
+}
+
+.cardTitle1 {
+  text-align: center;
+  margin-top: 40px;
+
+  font-family: 'Inter';
+  font-weight: 900;
+  font-size: 28px;
+}
+
+.cardSummary {
+  font-size: 10px;
+  font-family: 'Istok Web';
+  color: #DADADA;
+
+  margin-left: 15px;
+}
+
+.price {
+  font-size: 24;
+  font-family: 'Istok Web';
+  font-weight: bold;
+  letter-spacing: -2%;
+}
+
+.cardFooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: solid 1px white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  font-family: 'Istok Web';
+  font-size: 14;
+  letter-spacing: -0.5%;
+  color: white;
+
+  border-radius: 0 0 25px 25px;
+}
+
+.kitchen {
+  position: absolute;
+  bottom: 0;
+  height: 45px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.amaz {
+  margin-right: auto;
+
+  background-color: white;
+  height: 100%;
+  width: 55px;
+
+  border-radius: 0 7px 0 25px;
+}
+
+.goog {
+  margin-left: auto;
+
+  background-color: white;
+  height: 100%;
+  width: 55px;
+
+  border-radius: 7px 0 25px 0;
+}
+
+.goog, .amaz {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  display: block;
+}
